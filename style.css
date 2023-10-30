@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+div {
+    background-color: aqua;
+}
+
+h1 {
+    color: rgb(127, 189, 76);
+font-size: 50px;
+background-color: rgb(170, 241, 2);
+}
+
+p {
+    color: blueviolet;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.one {
+    background-color: rgb(8, 230, 0);
+}
+
+.three {
+    background-color: rgb(255, 140, 0);
+}
+
+.button {
+    background-color: aliceblue ;
+}
+
+.active{
+    background-color: aqua;
+}
+
