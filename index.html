@@ -5,31 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Мой сайт</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="menu">
-                <div class="menu__link">Home</div>
-                <div class="menu__link">Skills</div>
-                <div class="menu__link">Resume</div>
-                <div class="menu__link">Works</div>
-                <div class="menu__link">Contacts</div>
+            <ol class="menu">
+                <li class="menu__link">
+                    <a href="#home">Home</a>
+                </li>
+                
+                <li class="menu__link">
+                    <a href="">Skills</a>
+                </li>
+                
+                <li class="menu__link">
+                    <a href="#resume">Resume</a>
+                </li>
+                
+                <li class="menu__link">
+                    <a href="#works">Works</a>
+                </li>
+                
+                <li class="menu__link">
+                    <a href="#contacts">Contacts</a>
+                </li>
                 <div class="menu__link">
-                    <a class="menu__link" href="chinese.html">Svetailo</a>
+                    <a href="https://svetailo.com/#home">Svetailo</a>
                 </div>
                 <div class="menu__link">
-                    <a class="menu__link" href="chinese.html">Четвертая страница</a>
+                    <a href="chinese.html">Chinese</a>
                 </div>
+            </ol>
+
+            <div class="menu-burger">
+
+                <div class="menu-burger__button-wrap">
+                    <button class="menu-burger__button">X</button>
+                </div>
+
+
+                <ol class="menu-burger__links">
+
+                    <li class="menu-burger__link">
+                        <a href="">Home</a>
+                    </li>
+
+                    <li class="menu-burger__link">  
+                        <a href="">Skills</a>
+                    </li>
+
+                    <li class="menu-burger__link">
+                         <a href="">Resume</a>
+                    </li>
+                    
+                    <li class="menu-burger__link">
+                        <a href="#">Works</a>
+                    </li>
+                    
+                    <li class="menu-burger__link">
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li class="menu-burger__link">
+                        <a href="https://svetailo.com/#home">Svetailo</a>
+                    </li>
+                    <li class="menu-burger__link">
+                        <a href="chinese.html">Chinese</a>
+                    </li>
+                </ol>
             </div>
         </div>
     </header>
     <main class="main">
         <section class="first-screen">
             <div class="container">
-
                 <div class="first-screen__items">
 
                     <div>
@@ -43,15 +96,7 @@
                             src="https://moscowcitysale.ru/.fast_background/6/61/def_61a5d0d5f25d6a0af0aa6be1c6ba567fadfeccab_2_.jpg"
                             alt="Москва Сити">
                     </div>
-
-
-
-
-
                 </div>
-
-
-
             </div>
 
         </section>
@@ -60,21 +105,63 @@
 
             <div class="container">
 
-                <h2 class="skills__title">Skills</h2>
+                <h2 class="title skills__title">
+                    Skills
+                    <div class="title__decor"></div>
+                </h2>
 
-                <div class="content">
-                    JS, HTML, CSS...
+                <div class="skills__blocks">
+
+
+
+                    <div class="skills__block">
+                        <div class="skills__rhombus">
+                            <div><img src="img/icons/js_icon2.svg" alt="JS"></div>
+                        </div>
+                        <h3>
+                            Java Script
+                        </h3>
+                        <p class="skills__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, officiis.</p>
+                    </div>
+
+                    <div class="skills__block">
+                        <div class="skills__rhombus">
+                            <div><img src="img/icons/ts_icon.svg" alt="TypeScript"></div>
+                        </div>
+                        <h3 class="skills__title">
+                            TypeScript
+                        </h3>
+                        <p class="skills__text"> TS, it is a strict syntactical superset of JavaScript and adds optional static typing to the language.</p>
+                    </div>
+
+                    <div class="skills__block">
+                        <div class="skills__rhombus">
+                            <div><img src="img/icons/react_icon.svg" alt="React"></div>
+                        </div>
+                        <h3 class="skills__title">
+                            React
+                        </h3>
+                        <p class="skills__text"> A JavaScript library for building user interfaces</p>
+                    </div>
+                   
+
+
+                    
                 </div>
 
+                
             </div>
 
         </section>
 
-        <section class="resume">
+        <section id="resume" class="resume">
 
             <div class="container">
 
-                <h2 class="resume_tittle">Resume</h2>
+                <h2 class="title resume__tittle">
+                    Resume
+                    <div class="title__decor"></div>
+                </h2>
 
                 <div class="content">view more</div>
 
@@ -82,22 +169,28 @@
         </section>
 
 
-        <section class="works">
+        <section id="works" class="works">
 
             <div class="container">
-
-                <h2 class="works_tittle">Works....</h2>
+                
+                <h2 class="title works__tittle">
+                    Works
+                    <div class="title__decor"></div>
+                </h2>
 
                 <div class="content">.....</div>
 
             </div>
         </section>
 
-        <section class="contacts">
+        <section id="contacts" class="contacts">
 
             <div class="container">
 
-                <h2 class="contacts_tittle ">Contacts</h2>
+                <h2 class="title contacts__tittle ">
+                    Contacts
+                    <div class="title__decor"></div>
+                </h2>
 
                 <div class="content">name, email...</div>
 
@@ -111,7 +204,7 @@
 
             <div class="footer__links">
 
-                <a href="https://web.telegram.org/">
+                <a href="https://telegram.org/android?setln=ru">
                     <div class="footer__link">
                         <img width="30px" src="img/icons/telegram_icon2.svg" alt="">
                     </div>
@@ -176,7 +269,8 @@
     <!-- <script src="js/dataTypes.js"></script> -->
     <!-- <script src="js/tasks.js"></script> -->
 
-    <script src="js/training.js"></script>
+    <!-- <script src="js/training.js"></script> -->
+    <script src="js/burger.js"></script>
 
     
 </body>

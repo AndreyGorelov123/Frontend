@@ -3,9 +3,11 @@
 // Шаг №1
 // Эта строка находит первый элемент на веб - странице
 // с классом "mybutton" и сохраняет его в переменной метод querySelector()
-
+//document - это index.html file
+//querySelector - это метод, который ищет нужный нам селектор(class) в html, нужный селектор пишется в () скобках
 let mybutton = document.querySelector(".skills__title")
 console.log(mybutton)
+
 
 // Шаг №2
 // Добавляем слушатель событий на кнопку mybutton.
@@ -32,21 +34,29 @@ mybutton.addEventListener("click", function() {
 
 
 
+// Находим первый элемент на странице с классом "first-screen__image" и сохраняем его в переменной myImage
 let myImage = document.querySelector(".first-screen__image")
+
+// Выводим в консоль элемент, на который ссылается переменная myImage
 console.log(myImage)
 
+// Создаём переменную myImageToggle и присваиваем ей начальное значение true
 let myImageToggle = true
 
+// Добавляем слушатель события "mouseenter" на элемент myImage, который выполнит функцию при наведении курсора на картинку
 myImage.addEventListener("mouseenter", function () {
-
+	// Выводим в консоль сообщение при наведении курсора на картинку
 	console.log('курсор на картинке')
-	myImage.classList.add("hover-image")
 
+	// Добавляем класс "hover-image" к элементу myImage при наведении курсора
+	myImage.classList.add("hover-image")
 })
 
+// Добавляем слушатель события "mouseleave" на элемент myImage, который выполнит функцию при уходе курсора с картинки
 myImage.addEventListener("mouseleave", function () {
+	// Выводим в консоль сообщение при уходе курсора с картинки
+	console.log('курсор не на картинке')
 
-	console.log('курсор не картинке')
+	// Удаляем класс "hover-image" у элемента myImage при уходе курсора
 	myImage.classList.remove("hover-image")
-
 })
